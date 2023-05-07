@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+.cuadrocontacto {  
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+  grid-template-rows: 40% 40% 20% ;
+
+  grid-template-areas:
+   "contactate inputText logoVertical";
+}
+
+
+main.cuadrocontacto{ grid-area: contactate;}
+main.section { grid-area: inputText;}
+main.img {grid-area: logoVertical;}
+
+h3 {
+    color: black
+}
+
+@media screen and (max-width: 768px) {
+
+iframe {
+  width: 100%;
+  display: block;
+}
+}
